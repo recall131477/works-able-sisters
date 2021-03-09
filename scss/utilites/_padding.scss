@@ -1,0 +1,66 @@
+//初始0.25rem=4px
+$unit: 0.25rem;
+
+$directionMap:(
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  y: vertical,
+  x: horizontal,
+  a: all,
+);
+
+//padding
+@each $key,$value in $directionMap {
+  @for $i from 0 through 25 {
+    @if $key == a{
+      .p-#{$i} {
+        padding: $i * $unit;
+      }
+    }@else if $key == y {
+      .p#{$key}-#{$i} {
+        padding-top: $i * $unit;
+        padding-bottom: $i * $unit;
+      }
+    }@else if $key == x {
+      .p#{$key}-#{$i} {
+        padding-left: $i * $unit;
+        padding-right: $i * $unit;
+      }
+    }@else{
+      .p#{$key}-#{$i}{
+        padding-#{$value}: $i * $unit;
+      }
+    }
+  }
+}
+
+// padding RWD
+@each $breakpontKey, $breakpointValue in $mq-breakpoints {
+  @media (max-width: #{$breakpointValue}px) {
+    @each $key,$value in $directionMap {
+      @for $i from 0 through 25 {
+        @if $key == a{
+          .#{$breakpontKey}\:p-#{$i} {
+            padding: $i * $unit;
+          }
+        }@else if $key == y {
+          .#{$breakpontKey}\:p#{$key}-#{$i} {
+            padding-top: $i * $unit;
+            padding-bottom: $i * $unit;
+          }
+        }@else if $key == x {
+          .#{$breakpontKey}\:p#{$key}-#{$i} {
+            padding-left: $i * $unit;
+            padding-right: $i * $unit;
+          }
+        }@else{
+          .#{$breakpontKey}\:p#{$key}-#{$i}{
+            padding-#{$value}: $i * $unit;
+          }
+        }
+      }
+    }
+  }
+}

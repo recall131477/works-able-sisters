@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="9" viewBox="0 0 14 9">
+  <defs>
+    <clipPath id="clip-icon-select">
+      <rect width="14" height="9"/>
+    </clipPath>
+  </defs>
+  <g id="icon-select" clip-path="url(#clip-icon-select)">
+    <path id="Path_73" data-name="Path 73" d="M7080.486,2029.647l6,6-6,6" transform="translate(2042.646 -7079.486) rotate(90)" fill="none" stroke="#88c9a1" stroke-width="2"/>
+  </g>
+</svg>

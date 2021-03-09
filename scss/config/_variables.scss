@@ -1,0 +1,16 @@
+//主色、警告
+$color:(
+  primary: #88C9A1,
+  danger: #FBABAE,
+);
+
+//灰階，寫法nth($grayscale,第幾個顏色、css第一個位子為1，js才是0)
+$grayscale: #F0F0F0 #F8F8F8  #0000001A #DCDCDC #8C8C8C;
+
+// RWD斷點
+$mq-breakpoints: (
+  xl: 1199,
+  lg: 991,
+  md: 767,
+  sm: 576
+);

@@ -1,0 +1,73 @@
+// 文字大小
+$font:(
+  xs: 0.75rem,  // 12px
+  sm: 0.875rem, // 14px
+  base: 1rem,
+  lg: 1.25rem,  // 20px
+  xl: 1.5rem,   // 24px
+  2xl: 1.75rem, // 28px
+  3xl: 2rem     // 32px
+);
+
+@each $key,$value in $font {
+  .text-#{$key}{
+    font-size: $value; 
+  }
+}
+
+// 文字大小RWD
+@each $breakpontKey, $breakpointValue in $mq-breakpoints {
+  @media (max-width: #{$breakpointValue}px) {
+    @each $key,$value in $font {
+      .#{$breakpontKey}\:text-#{$key}{
+        font-size: $value; 
+      }  
+    }
+  }
+}
+
+// 文字粗細
+.font-light {
+  font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+// 文字置中、左、右
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+// 文字置中、左、右RWD
+@each $breakpontKey, $breakpointValue in $mq-breakpoints {
+  @media (max-width: #{$breakpointValue}px) {
+    @each $key, $value in $font {
+      .#{$breakpontKey}\:text-center {
+        text-align: center;
+      }  
+      .#{$breakpontKey}\:text-left {
+        text-align: left;
+      }
+      .#{$breakpontKey}\:text-right {
+        text-align: right;
+      }
+    }
+  }
+}

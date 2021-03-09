@@ -1,0 +1,47 @@
+footer {
+  background-color: nth($grayscale,2);
+}
+
+.footerMain {
+  border-bottom: 1px solid nth($grayscale,1);
+  text-align: center;
+}
+
+.footerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media(md){
+    display: block;
+  }
+  @include media(sm){
+    display: block;
+  }
+}
+
+.footImg {
+  margin: 0;
+}
+
+
+.footList {
+  display: flex;
+  justify-content: center;
+  @include media(sm){
+    display: block;
+  }
+}
+
+.footLink {
+  transition: color .3s ease;
+  &:hover{
+    color: #88C9A1;
+  }
+}
+
+.footerCopyRight {
+  text-align: center;
+  p{
+    color: nth($grayscale,5);
+  }
+}

@@ -1,0 +1,66 @@
+//初始0.25rem=4px
+$unit: 0.25rem;
+
+$directionMap:(
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  y: vertical,
+  x: horizontal,
+  a: all,
+);
+
+//margin
+@each $key,$value in $directionMap {
+  @for $i from 0 through 25 {
+    @if $key == a{
+      .m-#{$i} {
+        margin: $i * $unit;
+      }
+    }@else if $key == y {
+      .m#{$key}-#{$i} {
+        margin-top: $i * $unit;
+        margin-bottom: $i * $unit;
+      }
+    }@else if $key == x {
+      .m#{$key}-#{$i} {
+        margin-left: $i * $unit;
+        margin-right: $i * $unit;
+      }
+    }@else{
+      .m#{$key}-#{$i}{
+        margin-#{$value}: $i * $unit;
+      }
+    }
+  }
+}
+
+// margin RWD
+@each $breakpontKey, $breakpointValue in $mq-breakpoints {
+  @media (max-width: #{$breakpointValue}px) {
+    @each $key,$value in $directionMap {
+      @for $i from 0 through 25 {
+        @if $key == a{
+          .#{$breakpontKey}\:m-#{$i} {
+            margin: $i * $unit;
+          }
+        }@else if $key == y {
+          .#{$breakpontKey}\:m#{$key}-#{$i} {
+            margin-top: $i * $unit;
+            margin-bottom: $i * $unit;
+          }
+        }@else if $key == x {
+          .#{$breakpontKey}\:m#{$key}-#{$i} {
+            margin-left: $i * $unit;
+            margin-right: $i * $unit;
+          }
+        }@else{
+          .#{$breakpontKey}\:m#{$key}-#{$i}{
+            margin-#{$value}: $i * $unit;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.login {
+  min-height: calc(100vh - 80px);
+  @include media(md){
+    min-height: calc(100vh - 60px);
+  }
+  @include media(sm){
+    min-height: calc(100vh - 60px);
+  }
+  display: flex;
+  align-items: center;
+  background-image: url(../../images/texture.jpg);
+}
+
+.loginMain {
+  width: 100%;
+}
+
+.loginTitle {
+  text-align: center;
+}

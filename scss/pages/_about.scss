@@ -1,0 +1,94 @@
+.store {
+  position: relative;
+  >img{
+    width: 100%;
+  }
+}
+
+.storeMain {
+  @include positionA($left:0,$bottom:0);
+  width: 100%;
+  transform: translateY(25%);
+}
+
+.storeMember {
+  display: flex;
+  justify-content: space-between;
+  >img{
+    width: 50%;
+    max-width: 480px;
+  }
+}
+
+.about {
+  padding: 6.25rem 0 5rem;
+  @include media(lg){
+    padding: 5rem 0 4rem;
+  }
+  @include media(md){
+    padding: 5rem 0 4rem;
+  }
+  @include media(sm){
+    padding: 3rem 0;
+  }
+}
+
+.aboutContent {
+  letter-spacing: 0.8px;
+}
+.member {
+  position: relative;
+  padding: 0 0 6.25rem;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-image: url(../../images/texture.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.memberRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.875rem;
+  margin-bottom: -1.875rem;
+  position: relative;
+  @include media(md){
+    display: block;
+  }
+  @include media(sm){
+    display: block;
+  }
+}
+
+.memberCol {
+  max-width: 33.333%;
+  padding-left: 1.875rem;
+  margin-bottom: 1.875rem;
+  @include media(md){
+    max-width: 100%;
+  }
+  @include media(sm){
+    max-width: 100%;
+  }
+}
+
+.memberContent {
+  text-align: center;
+  @include media(md){
+    img{
+      max-width: 75%;
+    }
+  }
+  @include media(sm){
+    img{
+      max-width: 75%;
+    }
+  }
+}

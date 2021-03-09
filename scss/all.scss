@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
+
+@import 'config/normalize';
+@import 'config/reboot';
+@import 'config/mixins';
+@import 'config/variables';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/wrap';
+@import 'layout/loading';
+
+@import 'pages/index';
+@import 'pages/product';
+@import 'pages/about';
+@import 'pages/cart';
+@import 'pages/login';
+
+@import 'utilites/text';
+@import 'utilites/color';
+@import 'utilites/padding';
+@import 'utilites/margin';
+
+
+
+

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_170" data-name="Rectangle 170" width="24" height="24" transform="translate(980 -51)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-icon-cart">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="icon-cart" clip-path="url(#clip-icon-cart)">
+    <g id="Mask_Group_52" data-name="Mask Group 52" transform="translate(-980 51)" clip-path="url(#clip-path)">
+      <g id="Group_204" data-name="Group 204" transform="translate(980 -51)">
+        <path id="Path_103" data-name="Path 103" d="M19.979,20H4.021a1.006,1.006,0,0,1-1.007-1.164l1.7-10A1.014,1.014,0,0,1,5.721,8H18.279a1.014,1.014,0,0,1,1.006.836l1.7,10A1.006,1.006,0,0,1,19.979,20Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_104" data-name="Path 104" d="M8,8a4,4,0,0,1,8,0" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="Line_44" data-name="Line 44" y2="3" transform="translate(8 8)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line id="Line_45" data-name="Line 45" y2="3" transform="translate(16 8)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
