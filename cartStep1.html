@@ -1,220 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>able-sisters</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>able-sisters</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!--swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/all.min.css" />
+  </head>
 
-  <!--swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="dist/css/all.min.css">
+  <body>
+    <header class="header">
+      <div class="headerMain md:pr-4">
+        <a class="logo bg-primary" href="index.html"
+          ><img src="images/able-sisters.png" alt=""
+        /></a>
+        <div class="headerNav">
+          <ul>
+            <li>
+              <a class="headerLink" href="product.html">
+                <div class="headerIcon">
+                  <img src="images/icon-dress.svg" alt="" />
+                </div>
+                <span>手工服飾</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="about.html">
+                <div class="headerIcon">
+                  <img src="images/icon-star.svg" alt="" />
+                </div>
+                <span>關於我們</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="cartStep1.html">
+                <div class="headerIcon">
+                  <img src="images/icon-cart.svg" alt="" />
+                  <span class="headerQuantity bg-danger">1</span>
+                </div>
+                <span>購物車</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="login.html">
+                <div class="headerIcon">
+                  <img src="images/icon-admin.svg" alt="" />
+                </div>
+                <span>登入後台</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="headerBurger">
+          <span class="bg-primary"></span>
+          <span class="bg-primary"></span>
+        </div>
+      </div>
+    </header>
 
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="headerMain md:pr-4">
-      <a class="logo bg-primary" href="index.html"><img src="images/able-sisters.png" alt=""></a>
-      <div class="headerNav">
-        <ul>
-          <li>
-            <a class="headerLink" href="product.html">
-              <div class="headerIcon">
-                <img src="images/icon-dress.svg" alt="">
-              </div>
-              <span>手工服飾</span>
-            </a>
+    <main class="main pt-20 md:pt-15">
+      <div class="loading">
+        <img src="images/island.svg" alt="" />
+      </div>
+      <div class="step">
+        <ul class="stepList step_1">
+          <li class="stepItem stepItem1">
+            <span></span>
+            <h3 class="text-primary text-xs">訂購明細</h3>
           </li>
-          <li>
-            <a class="headerLink" href="about.html">
-              <div class="headerIcon">
-                <img src="images/icon-star.svg" alt="">
-              </div>
-              <span>關於我們</span>
-            </a>
+          <li class="stepItem">
+            <span></span>
+            <h3 class="text-xs">確認訂單</h3>
           </li>
-          <li>
-            <a class="headerLink" href="cartStep1.html">
-              <div class="headerIcon">
-                <img src="images/icon-cart.svg" alt="">
-                <span class="headerQuantity bg-danger">1</span>
-              </div>
-              <span>購物車</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="login.html">
-              <div class="headerIcon">
-                <img src="images/icon-admin.svg" alt="">
-              </div>
-              <span>登入後台</span>
-            </a>
+          <li class="stepItem">
+            <span></span>
+            <h3 class="text-xs">完成訂購</h3>
           </li>
         </ul>
       </div>
-      <div class="headerBurger">
-        <span class="bg-primary"></span>
-        <span class="bg-primary"></span>
-      </div>
-    </div>
-  </header>
-
-  <main class="main pt-20 md:pt-15">
-    <div class="loading">
-      <img src="images/island.svg" alt="">
-    </div>
-    <div class="step">
-      <ul class="stepList step_1">
-        <li class="stepItem stepItem1">
-          <span></span>
-          <h3 class="text-primary text-xs">訂購明細</h3>
-        </li>
-        <li class="stepItem">
-          <span></span>
-          <h3 class="text-xs">確認訂單</h3>
-        </li>
-        <li class="stepItem">
-          <span></span>
-          <h3 class="text-xs">完成訂購</h3>
-        </li>
-      </ul>
-    </div>
-    <div class="cart">
-      <div class="wrap-tiny">
-        <div class="cartSection mb-20">
-          <h2 class="text-3xl mb-8 xl:text-2xl lg:text-xl">購物車內容</h2>
-          <div class="table">
-            <div class="tableHeader">
-              <div class="tableRow">
-                <div class="tableCol">
-                  <div class="tableBox">
-                    <span>商品名稱</span>
-                  </div>
-                </div>
-                <div class="tableCol">
-                  <div class="tableBox">
-                    <span>數量</span>
-                  </div>
-                </div>
-                <div class="tableCol">
-                  <div class="tableBox">
-                    <span>單價</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <ul class="tableList">
-              <li class="tableItem">
+      <div class="cart">
+        <div class="wrap-tiny">
+          <div class="cartSection mb-20">
+            <h2 class="text-3xl mb-8 xl:text-2xl lg:text-xl">購物車內容</h2>
+            <div class="table">
+              <div class="tableHeader">
                 <div class="tableRow">
                   <div class="tableCol">
-                    <div data-title="商品名稱" class="tableBox">
-                      <img
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FUcI5FvVAjiSldifbsBAYwfzshE4PFlB1MV1N7MylcVDFoCiMzmFah1p8kT4dR1llL3aqHMlxiGO8X2M6iUVLOS1F97o6DpXoJYWbaFELnCSxOSPo9XXRUnrvXBr0IAt.png"
-                        alt="">
-                      <span>王冠</span>
+                    <div class="tableBox">
+                      <span>商品名稱</span>
                     </div>
                   </div>
                   <div class="tableCol">
-                    <div data-title="數量" class="tableBox">
-                      <div class="productDetailAction">
-                        <button class="productDetailBtn productDetailBtnMinus"></button>
-                        <div class="productDetailInput">1</div>
-                        <button class="productDetailBtn productDetailBtnPlus"></button>
+                    <div class="tableBox">
+                      <span>數量</span>
+                    </div>
+                  </div>
+                  <div class="tableCol">
+                    <div class="tableBox">
+                      <span>單價</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="tableList">
+                <li class="tableItem">
+                  <div class="tableRow">
+                    <div class="tableCol">
+                      <div data-title="商品名稱" class="tableBox">
+                        <img
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FUcI5FvVAjiSldifbsBAYwfzshE4PFlB1MV1N7MylcVDFoCiMzmFah1p8kT4dR1llL3aqHMlxiGO8X2M6iUVLOS1F97o6DpXoJYWbaFELnCSxOSPo9XXRUnrvXBr0IAt.png"
+                          alt=""
+                        />
+                        <span>王冠</span>
+                      </div>
+                    </div>
+                    <div class="tableCol">
+                      <div data-title="數量" class="tableBox">
+                        <div class="productDetailAction">
+                          <button
+                            class="productDetailBtn productDetailBtnMinus"
+                          ></button>
+                          <div class="productDetailInput">1</div>
+                          <button
+                            class="productDetailBtn productDetailBtnPlus"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tableCol">
+                      <div data-title="單價" class="tableBox">
+                        <span>$1,000,000</span>
                       </div>
                     </div>
                   </div>
-                  <div class="tableCol">
-                    <div data-title="單價" class="tableBox">
-                      <span>$1,000,000</span>
-                    </div>
-                  </div>
+                  <button type="button" class="tableRemove"></button>
+                </li>
+              </ul>
+              <div class="tableCoupon mt-5">
+                <input class="text-sm" type="text" placeholder="請輸入優惠碼" />
+                <button type="button" class="text-sm bg-primary p-2">
+                  套用
+                </button>
+              </div>
+              <div class="tableTotal mt-5">
+                <p>總計<span class="text-primary ml-1">$1,000,000</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="cartSection">
+            <h2 class="text-3xl mb-8 xl:text-2xl lg:text-xl">購買資訊</h2>
+            <div class="form">
+              <form action="">
+                <div class="formGroup mb-6">
+                  <label for="username">收件人姓名</label>
+                  <input
+                    class="formControl"
+                    type="text"
+                    id="username"
+                    name="收件人姓名"
+                    required
+                  />
                 </div>
-                <button type="button" class="tableRemove"></button>
+                <div class="formGroup mb-6">
+                  <label for="email">Email</label>
+                  <input
+                    class="formControl"
+                    type="email"
+                    id="email"
+                    name="Email"
+                    required
+                  />
+                </div>
+                <div class="formGroup mb-6">
+                  <label for="tel">電話</label>
+                  <input
+                    class="formControl"
+                    type="tel"
+                    id="tel"
+                    name="電話"
+                    required
+                  />
+                </div>
+                <div class="formGroup mb-6">
+                  <label for="address">地址</label>
+                  <input
+                    class="formControl"
+                    type="text"
+                    id="address"
+                    name="地址"
+                    required
+                  />
+                </div>
+                <div class="formGroup mb-6">
+                  <label for="">購買方式</label>
+                  <select class="formControl" required="required">
+                    <option value="" selected="selected">請選擇付款方式</option>
+                    <option value="WebATM">WebATM</option>
+                    <option value="ATM">ATM</option>
+                    <option value="CVS">CVS</option>
+                    <option value="Barcode">Barcode</option>
+                    <option value="Credit">Credit</option>
+                    <option value="ApplePay">ApplePay</option>
+                    <option value="GooglePay">GooglePay</option>
+                  </select>
+                </div>
+                <div class="formGroup mb-6">
+                  <label for="message">留言</label>
+                  <textarea class="formControl" id="message"></textarea>
+                </div>
+                <div class="stepBtn mt-10 text-base">
+                  <a class="btn bg-primary" href="cartStep2.html">送出訂單</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerMain py-8">
+        <div class="wrap">
+          <div class="footerNav">
+            <img
+              class="footImg md:mb-4"
+              src="images/able-sisters-2.png"
+              alt=""
+            />
+            <ul class="footList">
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="product.html">手工服飾</a>
+              </li>
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="about.html">關於我們</a>
+              </li>
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="cartStep1.html">購物車</a>
+              </li>
+              <li class="footItem">
+                <a class="footLink" href="login.html">登入後台</a>
               </li>
             </ul>
-            <div class="tableCoupon mt-5">
-              <input class="text-sm" type="text" placeholder="請輸入優惠碼">
-              <button type="button" class="text-sm bg-primary p-2">套用</button>
-            </div>
-            <div class="tableTotal mt-5">
-              <p>總計<span class="text-primary ml-1">$1,000,000</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="cartSection">
-          <h2 class="text-3xl mb-8 xl:text-2xl lg:text-xl">購買資訊</h2>
-          <div class="form">
-            <form action="">
-              <div class="formGroup mb-6">
-                <label for="username">收件人姓名</label>
-                <input class="formControl" type="text" id="username" name="收件人姓名" required>
-              </div>
-              <div class="formGroup mb-6">
-                <label for="email">Email</label>
-                <input class="formControl" type="email" id="email" name="Email" required>
-              </div>
-              <div class="formGroup mb-6">
-                <label for="tel">電話</label>
-                <input class="formControl" type="tel" id="tel" name="電話" required>
-              </div>
-              <div class="formGroup mb-6">
-                <label for="address">地址</label>
-                <input class="formControl" type="text" id="address" name="地址" required>
-              </div>
-              <div class="formGroup mb-6">
-                <label for="">購買方式</label>
-                <select class="formControl" required="required">
-                  <option value="" selected="selected">請選擇付款方式</option>
-                  <option value="WebATM">WebATM</option>
-                  <option value="ATM">ATM</option>
-                  <option value="CVS">CVS</option>
-                  <option value="Barcode">Barcode</option>
-                  <option value="Credit">Credit</option>
-                  <option value="ApplePay">ApplePay</option>
-                  <option value="GooglePay">GooglePay</option>
-                </select>
-              </div>
-              <div class="formGroup mb-6">
-                <label for="message">留言</label>
-                <textarea class="formControl" id="message"></textarea>
-              </div>
-              <div class="stepBtn mt-10 text-base">
-                <a class="btn bg-primary" href="cartStep2.html">送出訂單</a>
-              </div>
-            </form>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footerMain py-8">
-      <div class="wrap">
-        <div class="footerNav">
-          <img class="footImg md:mb-4" src="images/able-sisters-2.png" alt="">
-          <ul class="footList">
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="product.html">手工服飾</a></li>
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="about.html">關於我們</a></li>
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="cartStep1.html">購物車</a></li>
-            <li class="footItem"><a class="footLink" href="login.html">登入後台</a></li>
-          </ul>
+      <div class="footerCopyRight py-8">
+        <div class="wrap">
+          <p>網站所有內容、圖片僅為練習使用，無任何商業用途。</p>
         </div>
       </div>
-    </div>
-    <div class="footerCopyRight py-8">
-      <div class="wrap">
-        <p>網站所有內容、圖片僅為練習使用，無任何商業用途。</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/all.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
+  </body>
 </html>

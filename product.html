@@ -1,447 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>able-sisters</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>able-sisters</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!--swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/all.min.css" />
+  </head>
 
-  <!--swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="dist/css/all.min.css">
-
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="headerMain md:pr-4">
-      <a class="logo bg-primary" href="index.html"><img src="images/able-sisters.png" alt=""></a>
-      <div class="headerNav">
-        <ul>
-          <li>
-            <a class="headerLink" href="product.html">
-              <div class="headerIcon">
-                <img src="images/icon-dress.svg" alt="">
-              </div>
-              <span>手工服飾</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="about.html">
-              <div class="headerIcon">
-                <img src="images/icon-star.svg" alt="">
-              </div>
-              <span>關於我們</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="cartStep1.html">
-              <div class="headerIcon">
-                <img src="images/icon-cart.svg" alt="">
-                <span class="headerQuantity bg-danger">1</span>
-              </div>
-              <span>購物車</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="login.html">
-              <div class="headerIcon">
-                <img src="images/icon-admin.svg" alt="">
-              </div>
-              <span>登入後台</span>
-            </a>
-          </li>
-        </ul>
+  <body>
+    <header class="header">
+      <div class="headerMain md:pr-4">
+        <a class="logo bg-primary" href="index.html"
+          ><img src="images/able-sisters.png" alt=""
+        /></a>
+        <div class="headerNav">
+          <ul>
+            <li>
+              <a class="headerLink" href="product.html">
+                <div class="headerIcon">
+                  <img src="images/icon-dress.svg" alt="" />
+                </div>
+                <span>手工服飾</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="about.html">
+                <div class="headerIcon">
+                  <img src="images/icon-star.svg" alt="" />
+                </div>
+                <span>關於我們</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="cartStep1.html">
+                <div class="headerIcon">
+                  <img src="images/icon-cart.svg" alt="" />
+                  <span class="headerQuantity bg-danger">1</span>
+                </div>
+                <span>購物車</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="login.html">
+                <div class="headerIcon">
+                  <img src="images/icon-admin.svg" alt="" />
+                </div>
+                <span>登入後台</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="headerBurger">
+          <span class="bg-primary"></span>
+          <span class="bg-primary"></span>
+        </div>
       </div>
-      <div class="headerBurger">
-        <span class="bg-primary"></span>
-        <span class="bg-primary"></span>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main pt-20 md:pt-15">
-    <div class="loading">
-      <img src="images/island.svg" alt="">
-    </div>
-    <div class="product">
-      <div class="wrap">
-        <div class="productMain">
-          <div class="productFilter mr-10 lg:mb-8">
-            <ul>
-              <li class="p-5 lg:p-4"><img src="images/icon-category-1.svg" alt="">
-                <h3>全部商品</h3>
+    <main class="main pt-20 md:pt-15">
+      <div class="loading">
+        <img src="images/island.svg" alt="" />
+      </div>
+      <div class="product">
+        <div class="wrap">
+          <div class="productMain">
+            <div class="productFilter mr-10 lg:mb-8">
+              <ul>
+                <li class="p-5 lg:p-4">
+                  <img src="images/icon-category-1.svg" alt="" />
+                  <h3>全部商品</h3>
+                </li>
+                <li class="p-5 lg:p-4">
+                  <img src="images/icon-category-2.svg" alt="" />
+                  <h3>連衣裙</h3>
+                </li>
+                <li class="p-5 lg:p-4">
+                  <img src="images/icon-category-3.svg" alt="" />
+                  <h3>帽子</h3>
+                </li>
+                <li class="p-5 lg:p-4">
+                  <img src="images/icon-category-4.svg" alt="" />
+                  <h3>飾品</h3>
+                </li>
+              </ul>
+            </div>
+            <div class="productList">
+              <div class="productListItem">
+                <h2 class="font-medium text-3xl mb-6 lg:text-2xl md:text-xl">
+                  全部商品
+                </h2>
+                <div class="productRow">
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">帽子</span>
+                      <a class="productLink" href="productCrown.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FUcI5FvVAjiSldifbsBAYwfzshE4PFlB1MV1N7MylcVDFoCiMzmFah1p8kT4dR1llL3aqHMlxiGO8X2M6iUVLOS1F97o6DpXoJYWbaFELnCSxOSPo9XXRUnrvXBr0IAt.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">王冠</h2>
+                        <p class="mb-5">欲戴王冠，必成其重</p>
+                        <ul class="productPrice">
+                          <li>$1,200,000</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1">$1,000,000</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">飾品</span>
+                      <a class="productLink" href="productGlasses.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/8EecMcC6T7GGKDrRf0dggONWG6RDyVdQrH744b2M0JTi87Fc9J8Y4ivTYPi5EaFsyt1Dw6YiwiC2RD1T3KT9nMKIrhKs6rZ2hQGNIBUqrUy7iWQkEFCe2rJXVdopdIpg.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">圓框眼鏡</h2>
+                        <p class="mb-5">圓框眼鏡，簡單的設計。</p>
+                        <ul class="productPrice">
+                          <li>$2,200</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $1,950 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">帽子</span>
+                      <a class="productLink" href="productCorolla.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/yqnFzSk80Jtgi4123acf6ySAXglXfifEqjwfOlgSlKkEQvTZ9zSMBGvi3IIr3DVJ4CkDXuGalZFhIQkri47Aq1QVVI8rZrV4fxOPZvZwpTid43ub4XjKlInW1ZNTdFOD.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">銀蓮花花冠</h2>
+                        <p class="mb-5">
+                          用銀蓮花編織而成的一頂花冠，樸實無華。
+                        </p>
+                        <ul class="productPrice">
+                          <li>$800</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $640 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productRobe.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/wWRIxgKzA1GjQ8XaJlkk0KuokBb4XTDAyIsqW5H351SEplTqQkxO9uhThLsfKdSMsV9WrFqjGz8TqnAQiKjZTeUp2tJstA45avznk4g0USaSa0Wkd6mCVED8dPLWTJpc.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">魔法師長袍</h2>
+                        <p class="mb-5">去去武器走!</p>
+                        <ul class="productPrice">
+                          <li>$3400</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $2,900 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productNile.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/zk0cKlHPH07hRvuMrKQTQSDDEK4yPcUwOVrGTbAPa3d3IrSHHvB3zt7YIkqFiWPtgIIh2xCffhB33vKRJE6PZ2sRKmzpMy95DJKpncSZVGyI7IP23yinXEFAxqhMXU8b.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">尼羅河傳統服裝</h2>
+                        <p class="mb-5">
+                          尼羅河的傳統服裝，也是艷后喜歡的衣服。
+                        </p>
+                        <ul class="productPrice">
+                          <li>$1,200</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $1,000 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productMaid.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/RqbREGBrRwlhuEEktJhB3AwujApIEmzLrgbzT4CmvSAbZNpZYNEoYM8ObJy9rJ1qryhSItqUKr53eOh1lYvvEDiw6OPAgMLpxejNdaq9xpAurCNFqIoH2Mo7Zpot3qXI.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">女僕裝</h2>
+                        <p class="mb-5">經典的女僕裝，主人！你回來了！</p>
+                        <ul class="productPrice">
+                          <li>$4,200</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $3,600 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productTwoThin.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/0JhqgvNvpYWayTHSvyqhMqjyzwl2c4YvEGM18u05JXoI9Lj0Jom6KmQDpGfvzM0FXotKB3yfqIUIU9q5XvWUWZQmb0A15ReHKCe56w7j1Z56BDYI0c6eoV6AhuZ8sSHf.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">
+                          兩件式細肩帶連身裙
+                        </h2>
+                        <p class="mb-5">
+                          使用樸素的米色搭配白色，給人一種低調、樸實無華的感覺，歡迎來店試穿。
+                        </p>
+                        <ul class="productPrice">
+                          <li>$2,000</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $1,600 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productBohemia.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/71TNtTlJaOmbIiTOnPQ1mD96NhrYGlNoIyJ2TRx8F65R09qIzPoqMYa6gD5JZn1rNbD9ZOVtRqTcO2TMGnoTAPpLjARB78KKGjXneIACsqXbC7SZiuC8kBJP6OsiPhfD.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">波希米亞連身裙</h2>
+                        <p class="mb-5">
+                          具有波希米亞風格的連衣裙，是 Able Sisters
+                          這一季最新的衣服，歡迎來店試穿。
+                        </p>
+                        <ul class="productPrice">
+                          <li>$2,800</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $2,400 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productFlowers.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/ZaXyyMbK46YbBYuhFhBu2trGWBsBW58fwuz1NOvPjjZB02paBgFK1DArNzSyblc9gIYp0DBmlZEIJkW4ABpQMDt6JBOQW1s2HQIIYttVgu4i8SWjRYa8AK5I4huuxFFk.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">粗花連身裙</h2>
+                        <p class="mb-5">
+                          以鮮豔的黃色當底，使用橘、綠色互相交錯而成的花紋，想成為眾人矚目的焦點嗎?
+                        </p>
+                        <ul class="productPrice">
+                          <li>$1,800</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $1,400 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="productListItem">
+                <h2 class="font-medium text-3xl mb-6">連衣裙</h2>
+                <div class="productRow">
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productRobe.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/wWRIxgKzA1GjQ8XaJlkk0KuokBb4XTDAyIsqW5H351SEplTqQkxO9uhThLsfKdSMsV9WrFqjGz8TqnAQiKjZTeUp2tJstA45avznk4g0USaSa0Wkd6mCVED8dPLWTJpc.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">魔法師長袍</h2>
+                        <p class="mb-5">去去武器走!</p>
+                        <ul class="productPrice">
+                          <li>$3400</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $2,900 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productNile.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/zk0cKlHPH07hRvuMrKQTQSDDEK4yPcUwOVrGTbAPa3d3IrSHHvB3zt7YIkqFiWPtgIIh2xCffhB33vKRJE6PZ2sRKmzpMy95DJKpncSZVGyI7IP23yinXEFAxqhMXU8b.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">尼羅河傳統服裝</h2>
+                        <p class="mb-5">
+                          尼羅河的傳統服裝，也是艷后喜歡的衣服。
+                        </p>
+                        <ul class="productPrice">
+                          <li>$1,200</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $1,000 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productMaid.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/RqbREGBrRwlhuEEktJhB3AwujApIEmzLrgbzT4CmvSAbZNpZYNEoYM8ObJy9rJ1qryhSItqUKr53eOh1lYvvEDiw6OPAgMLpxejNdaq9xpAurCNFqIoH2Mo7Zpot3qXI.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">女僕裝</h2>
+                        <p class="mb-5">經典的女僕裝，主人！你回來了！</p>
+                        <ul class="productPrice">
+                          <li>$4,200</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $3,600 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productTwoThin.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/0JhqgvNvpYWayTHSvyqhMqjyzwl2c4YvEGM18u05JXoI9Lj0Jom6KmQDpGfvzM0FXotKB3yfqIUIU9q5XvWUWZQmb0A15ReHKCe56w7j1Z56BDYI0c6eoV6AhuZ8sSHf.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">
+                          兩件式細肩帶連身裙
+                        </h2>
+                        <p class="mb-5">
+                          使用樸素的米色搭配白色，給人一種低調、樸實無華的感覺，歡迎來店試穿。
+                        </p>
+                        <ul class="productPrice">
+                          <li>$2,000</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $1,600 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productBohemia.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/71TNtTlJaOmbIiTOnPQ1mD96NhrYGlNoIyJ2TRx8F65R09qIzPoqMYa6gD5JZn1rNbD9ZOVtRqTcO2TMGnoTAPpLjARB78KKGjXneIACsqXbC7SZiuC8kBJP6OsiPhfD.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">波希米亞連身裙</h2>
+                        <p class="mb-5">
+                          具有波希米亞風格的連衣裙，是 Able Sisters
+                          這一季最新的衣服，歡迎來店試穿。
+                        </p>
+                        <ul class="productPrice">
+                          <li>$2,800</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $2,400 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">連衣裙</span>
+                      <a class="productLink" href="productFlowers.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/ZaXyyMbK46YbBYuhFhBu2trGWBsBW58fwuz1NOvPjjZB02paBgFK1DArNzSyblc9gIYp0DBmlZEIJkW4ABpQMDt6JBOQW1s2HQIIYttVgu4i8SWjRYa8AK5I4huuxFFk.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">粗花連身裙</h2>
+                        <p class="mb-5">
+                          以鮮豔的黃色當底，使用橘、綠色互相交錯而成的花紋，想成為眾人矚目的焦點嗎?
+                        </p>
+                        <ul class="productPrice">
+                          <li>$1,800</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $1,400 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="productListItem">
+                <h2 class="font-medium text-3xl mb-6">帽子</h2>
+                <div class="productRow">
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">帽子</span>
+                      <a class="productLink" href="productCrown.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FUcI5FvVAjiSldifbsBAYwfzshE4PFlB1MV1N7MylcVDFoCiMzmFah1p8kT4dR1llL3aqHMlxiGO8X2M6iUVLOS1F97o6DpXoJYWbaFELnCSxOSPo9XXRUnrvXBr0IAt.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">王冠</h2>
+                        <p class="mb-5">欲戴王冠，必成其重</p>
+                        <ul class="productPrice">
+                          <li>$1,200,000</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1">$1,000,000</span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">帽子</span>
+                      <a class="productLink" href="productCorolla.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/yqnFzSk80Jtgi4123acf6ySAXglXfifEqjwfOlgSlKkEQvTZ9zSMBGvi3IIr3DVJ4CkDXuGalZFhIQkri47Aq1QVVI8rZrV4fxOPZvZwpTid43ub4XjKlInW1ZNTdFOD.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">銀蓮花花冠</h2>
+                        <p class="mb-5">
+                          用銀蓮花編織而成的一頂花冠，樸實無華。
+                        </p>
+                        <ul class="productPrice">
+                          <li>$800</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $640 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="productListItem">
+                <h2 class="font-medium text-3xl mb-6">飾品</h2>
+                <div class="productRow">
+                  <div class="productCol">
+                    <div class="productCard">
+                      <button class="productCart">
+                        <img src="images/icon-cart.svg" alt="" />
+                      </button>
+                      <span class="productCategory">飾品</span>
+                      <a class="productLink" href="productGlasses.html">
+                        <img
+                          class="mb-3"
+                          src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/8EecMcC6T7GGKDrRf0dggONWG6RDyVdQrH744b2M0JTi87Fc9J8Y4ivTYPi5EaFsyt1Dw6YiwiC2RD1T3KT9nMKIrhKs6rZ2hQGNIBUqrUy7iWQkEFCe2rJXVdopdIpg.png"
+                          alt=""
+                        />
+                        <h2 class="font-medium text-xl mb-3">圓框眼鏡</h2>
+                        <p class="mb-5">圓框眼鏡，簡單的設計。</p>
+                        <ul class="productPrice">
+                          <li>$2,200</li>
+                          <li class="text-primary">
+                            優惠價<span class="text-lg ml-1"> $1,950 </span>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerMain py-8">
+        <div class="wrap">
+          <div class="footerNav">
+            <img
+              class="footImg md:mb-4"
+              src="images/able-sisters-2.png"
+              alt=""
+            />
+            <ul class="footList">
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="product.html">手工服飾</a>
               </li>
-              <li class="p-5 lg:p-4"><img src="images/icon-category-2.svg" alt="">
-                <h3>連衣裙</h3>
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="about.html">關於我們</a>
               </li>
-              <li class="p-5 lg:p-4"><img src="images/icon-category-3.svg" alt="">
-                <h3>帽子</h3>
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="cartStep1.html">購物車</a>
               </li>
-              <li class="p-5 lg:p-4"><img src="images/icon-category-4.svg" alt="">
-                <h3>飾品</h3>
+              <li class="footItem">
+                <a class="footLink" href="login.html">登入後台</a>
               </li>
             </ul>
           </div>
-          <div class="productList">
-            <div class="productListItem">
-              <h2 class="font-medium text-3xl mb-6 lg:text-2xl md:text-xl">全部商品</h2>
-              <div class="productRow">
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">帽子</span>
-                    <a class="productLink" href="productCrown.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FUcI5FvVAjiSldifbsBAYwfzshE4PFlB1MV1N7MylcVDFoCiMzmFah1p8kT4dR1llL3aqHMlxiGO8X2M6iUVLOS1F97o6DpXoJYWbaFELnCSxOSPo9XXRUnrvXBr0IAt.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">王冠</h2>
-                      <p class="mb-5">欲戴王冠，必成其重</p>
-                      <ul class="productPrice">
-                        <li>$1,200,000</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1">$1,000,000</span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">飾品</span>
-                    <a class="productLink" href="productGlasses.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/8EecMcC6T7GGKDrRf0dggONWG6RDyVdQrH744b2M0JTi87Fc9J8Y4ivTYPi5EaFsyt1Dw6YiwiC2RD1T3KT9nMKIrhKs6rZ2hQGNIBUqrUy7iWQkEFCe2rJXVdopdIpg.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">圓框眼鏡</h2>
-                      <p class="mb-5">圓框眼鏡，簡單的設計。</p>
-                      <ul class="productPrice">
-                        <li>$2,200</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $1,950 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">帽子</span>
-                    <a class="productLink" href="productCorolla.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/yqnFzSk80Jtgi4123acf6ySAXglXfifEqjwfOlgSlKkEQvTZ9zSMBGvi3IIr3DVJ4CkDXuGalZFhIQkri47Aq1QVVI8rZrV4fxOPZvZwpTid43ub4XjKlInW1ZNTdFOD.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">銀蓮花花冠</h2>
-                      <p class="mb-5">用銀蓮花編織而成的一頂花冠，樸實無華。</p>
-                      <ul class="productPrice">
-                        <li>$800</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $640 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productRobe.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/wWRIxgKzA1GjQ8XaJlkk0KuokBb4XTDAyIsqW5H351SEplTqQkxO9uhThLsfKdSMsV9WrFqjGz8TqnAQiKjZTeUp2tJstA45avznk4g0USaSa0Wkd6mCVED8dPLWTJpc.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">魔法師長袍</h2>
-                      <p class="mb-5">去去武器走!</p>
-                      <ul class="productPrice">
-                        <li>$3400</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $2,900 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productNile.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/zk0cKlHPH07hRvuMrKQTQSDDEK4yPcUwOVrGTbAPa3d3IrSHHvB3zt7YIkqFiWPtgIIh2xCffhB33vKRJE6PZ2sRKmzpMy95DJKpncSZVGyI7IP23yinXEFAxqhMXU8b.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">尼羅河傳統服裝</h2>
-                      <p class="mb-5">尼羅河的傳統服裝，也是艷后喜歡的衣服。</p>
-                      <ul class="productPrice">
-                        <li>$1,200</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $1,000 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productMaid.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/RqbREGBrRwlhuEEktJhB3AwujApIEmzLrgbzT4CmvSAbZNpZYNEoYM8ObJy9rJ1qryhSItqUKr53eOh1lYvvEDiw6OPAgMLpxejNdaq9xpAurCNFqIoH2Mo7Zpot3qXI.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">女僕裝</h2>
-                      <p class="mb-5">經典的女僕裝，主人！你回來了！</p>
-                      <ul class="productPrice">
-                        <li>$4,200</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $3,600 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productTwoThin.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/0JhqgvNvpYWayTHSvyqhMqjyzwl2c4YvEGM18u05JXoI9Lj0Jom6KmQDpGfvzM0FXotKB3yfqIUIU9q5XvWUWZQmb0A15ReHKCe56w7j1Z56BDYI0c6eoV6AhuZ8sSHf.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">兩件式細肩帶連身裙</h2>
-                      <p class="mb-5">使用樸素的米色搭配白色，給人一種低調、樸實無華的感覺，歡迎來店試穿。</p>
-                      <ul class="productPrice">
-                        <li>$2,000</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $1,600 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productBohemia.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/71TNtTlJaOmbIiTOnPQ1mD96NhrYGlNoIyJ2TRx8F65R09qIzPoqMYa6gD5JZn1rNbD9ZOVtRqTcO2TMGnoTAPpLjARB78KKGjXneIACsqXbC7SZiuC8kBJP6OsiPhfD.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">波希米亞連身裙</h2>
-                      <p class="mb-5">具有波希米亞風格的連衣裙，是 Able Sisters 這一季最新的衣服，歡迎來店試穿。</p>
-                      <ul class="productPrice">
-                        <li>$2,800</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $2,400 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productFlowers.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/ZaXyyMbK46YbBYuhFhBu2trGWBsBW58fwuz1NOvPjjZB02paBgFK1DArNzSyblc9gIYp0DBmlZEIJkW4ABpQMDt6JBOQW1s2HQIIYttVgu4i8SWjRYa8AK5I4huuxFFk.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">粗花連身裙</h2>
-                      <p class="mb-5">以鮮豔的黃色當底，使用橘、綠色互相交錯而成的花紋，想成為眾人矚目的焦點嗎?</p>
-                      <ul class="productPrice">
-                        <li>$1,800</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $1,400 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="productListItem">
-              <h2 class="font-medium text-3xl mb-6">連衣裙</h2>
-              <div class="productRow">
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productRobe.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/wWRIxgKzA1GjQ8XaJlkk0KuokBb4XTDAyIsqW5H351SEplTqQkxO9uhThLsfKdSMsV9WrFqjGz8TqnAQiKjZTeUp2tJstA45avznk4g0USaSa0Wkd6mCVED8dPLWTJpc.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">魔法師長袍</h2>
-                      <p class="mb-5">去去武器走!</p>
-                      <ul class="productPrice">
-                        <li>$3400</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $2,900 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productNile.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/zk0cKlHPH07hRvuMrKQTQSDDEK4yPcUwOVrGTbAPa3d3IrSHHvB3zt7YIkqFiWPtgIIh2xCffhB33vKRJE6PZ2sRKmzpMy95DJKpncSZVGyI7IP23yinXEFAxqhMXU8b.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">尼羅河傳統服裝</h2>
-                      <p class="mb-5">尼羅河的傳統服裝，也是艷后喜歡的衣服。</p>
-                      <ul class="productPrice">
-                        <li>$1,200</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $1,000 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productMaid.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/RqbREGBrRwlhuEEktJhB3AwujApIEmzLrgbzT4CmvSAbZNpZYNEoYM8ObJy9rJ1qryhSItqUKr53eOh1lYvvEDiw6OPAgMLpxejNdaq9xpAurCNFqIoH2Mo7Zpot3qXI.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">女僕裝</h2>
-                      <p class="mb-5">經典的女僕裝，主人！你回來了！</p>
-                      <ul class="productPrice">
-                        <li>$4,200</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $3,600 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productTwoThin.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/0JhqgvNvpYWayTHSvyqhMqjyzwl2c4YvEGM18u05JXoI9Lj0Jom6KmQDpGfvzM0FXotKB3yfqIUIU9q5XvWUWZQmb0A15ReHKCe56w7j1Z56BDYI0c6eoV6AhuZ8sSHf.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">兩件式細肩帶連身裙</h2>
-                      <p class="mb-5">使用樸素的米色搭配白色，給人一種低調、樸實無華的感覺，歡迎來店試穿。</p>
-                      <ul class="productPrice">
-                        <li>$2,000</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $1,600 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productBohemia.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/71TNtTlJaOmbIiTOnPQ1mD96NhrYGlNoIyJ2TRx8F65R09qIzPoqMYa6gD5JZn1rNbD9ZOVtRqTcO2TMGnoTAPpLjARB78KKGjXneIACsqXbC7SZiuC8kBJP6OsiPhfD.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">波希米亞連身裙</h2>
-                      <p class="mb-5">具有波希米亞風格的連衣裙，是 Able Sisters 這一季最新的衣服，歡迎來店試穿。</p>
-                      <ul class="productPrice">
-                        <li>$2,800</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $2,400 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">連衣裙</span>
-                    <a class="productLink" href="productFlowers.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/ZaXyyMbK46YbBYuhFhBu2trGWBsBW58fwuz1NOvPjjZB02paBgFK1DArNzSyblc9gIYp0DBmlZEIJkW4ABpQMDt6JBOQW1s2HQIIYttVgu4i8SWjRYa8AK5I4huuxFFk.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">粗花連身裙</h2>
-                      <p class="mb-5">以鮮豔的黃色當底，使用橘、綠色互相交錯而成的花紋，想成為眾人矚目的焦點嗎?</p>
-                      <ul class="productPrice">
-                        <li>$1,800</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $1,400 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="productListItem">
-              <h2 class="font-medium text-3xl mb-6">帽子</h2>
-              <div class="productRow">
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">帽子</span>
-                    <a class="productLink" href="productCrown.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FUcI5FvVAjiSldifbsBAYwfzshE4PFlB1MV1N7MylcVDFoCiMzmFah1p8kT4dR1llL3aqHMlxiGO8X2M6iUVLOS1F97o6DpXoJYWbaFELnCSxOSPo9XXRUnrvXBr0IAt.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">王冠</h2>
-                      <p class="mb-5">欲戴王冠，必成其重</p>
-                      <ul class="productPrice">
-                        <li>$1,200,000</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1">$1,000,000</span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">帽子</span>
-                    <a class="productLink" href="productCorolla.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/yqnFzSk80Jtgi4123acf6ySAXglXfifEqjwfOlgSlKkEQvTZ9zSMBGvi3IIr3DVJ4CkDXuGalZFhIQkri47Aq1QVVI8rZrV4fxOPZvZwpTid43ub4XjKlInW1ZNTdFOD.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">銀蓮花花冠</h2>
-                      <p class="mb-5">用銀蓮花編織而成的一頂花冠，樸實無華。</p>
-                      <ul class="productPrice">
-                        <li>$800</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $640 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="productListItem">
-              <h2 class="font-medium text-3xl mb-6">飾品</h2>
-              <div class="productRow">
-                <div class="productCol">
-                  <div class="productCard">
-                    <button class="productCart"><img src="images/icon-cart.svg" alt=""></button>
-                    <span class="productCategory">飾品</span>
-                    <a class="productLink" href="productGlasses.html">
-                      <img class="mb-3"
-                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/8EecMcC6T7GGKDrRf0dggONWG6RDyVdQrH744b2M0JTi87Fc9J8Y4ivTYPi5EaFsyt1Dw6YiwiC2RD1T3KT9nMKIrhKs6rZ2hQGNIBUqrUy7iWQkEFCe2rJXVdopdIpg.png"
-                        alt="">
-                      <h2 class="font-medium text-xl mb-3">圓框眼鏡</h2>
-                      <p class="mb-5">圓框眼鏡，簡單的設計。</p>
-                      <ul class="productPrice">
-                        <li>$2,200</li>
-                        <li class="text-primary">優惠價<span class="text-lg ml-1"> $1,950 </span></li>
-                      </ul>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footerMain py-8">
-      <div class="wrap">
-        <div class="footerNav">
-          <img class="footImg md:mb-4" src="images/able-sisters-2.png" alt="">
-          <ul class="footList">
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="product.html">手工服飾</a></li>
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="about.html">關於我們</a></li>
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="cartStep1.html">購物車</a></li>
-            <li class="footItem"><a class="footLink" href="login.html">登入後台</a></li>
-          </ul>
+      <div class="footerCopyRight py-8">
+        <div class="wrap">
+          <p>網站所有內容、圖片僅為練習使用，無任何商業用途。</p>
         </div>
       </div>
-    </div>
-    <div class="footerCopyRight py-8">
-      <div class="wrap">
-        <p>網站所有內容、圖片僅為練習使用，無任何商業用途。</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/all.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
+  </body>
 </html>

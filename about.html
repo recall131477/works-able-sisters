@@ -1,152 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>able-sisters</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>able-sisters</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!--swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/all.min.css" />
+  </head>
 
-  <!--swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="dist/css/all.min.css">
-
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="headerMain md:pr-4">
-      <a class="logo bg-primary" href="index.html"><img src="images/able-sisters.png" alt=""></a>
-      <div class="headerNav">
-        <ul>
-          <li>
-            <a class="headerLink" href="product.html">
-              <div class="headerIcon">
-                <img src="images/icon-dress.svg" alt="">
-              </div>
-              <span>手工服飾</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="about.html">
-              <div class="headerIcon">
-                <img src="images/icon-star.svg" alt="">
-              </div>
-              <span>關於我們</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="cartStep1.html">
-              <div class="headerIcon">
-                <img src="images/icon-cart.svg" alt="">
-                <span class="headerQuantity bg-danger">1</span>
-              </div>
-              <span>購物車</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="login.html">
-              <div class="headerIcon">
-                <img src="images/icon-admin.svg" alt="">
-              </div>
-              <span>登入後台</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="headerBurger">
-        <span class="bg-primary"></span>
-        <span class="bg-primary"></span>
-      </div>
-    </div>
-  </header>
-
-  <main class="main pt-20 md:pt-15">
-    <div class="loading">
-      <img src="images/island.svg" alt="">
-    </div>
-    <div class="store">
-      <img src="images/about-banner.jpg" alt="">
-      <div class="storeMain">
-        <div class="wrap">
-          <div class="storeMember">
-            <img src="images/member-2.png" alt="">
-            <img src="images/member-1.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="about">
-      <div class="wrap-tiny">
-        <div>
-          <h2 class="title font-medium text-3xl mb-8 lg:text-2xl lg:mb-5 md:text-xl">哈囉! 我們是 <span
-              class="text-primary">Able
-              Sisters</span></h2>
-        </div>
-        <p class="aboutContent">
-          刺蝟姐妹的裁縫店名叫「Able Sisters」，一開始是位在初代動物之森中的村子 裡，由刺蝟三姐妹的大姐麻兒與小妹絹兒負責營運，販售服裝以及設計圖樣。起初
-          這間裁縫店是她們的父母開的，一家五口原本過著快樂的生活。但是一次意外讓她 們的父母過世了，因此年紀最長的麻兒只好扛起照顧妹妹們的責任，繼續維持著裁 縫店的生計。
-          <br>
-          <br>
-          而二姐綿兒卻在父母過世後決定獨立，想要成為一個時尚設計師，在與麻兒爭吵之 後離開了家，小妹絹兒則因為年紀太小了，幾乎不記得發生了什麼事情。因此裁縫 店便由麻兒與絹兒繼承，在動物之森系列中每一作都固定登場，而外觀也都是一致
-          的獨棟紅屋與綠色屋頂，只有在 3DS 版《走出戶外動物之森》中，裁縫店的二樓 是美髮店。在 Switch 版動物森友會中，一開始是絹兒受到豆貍與粒貍的邀請來 島上擺攤，擺攤幾次過後就也來到島上開店了。
-        </p>
-      </div>
-    </div>
-    <div class="member">
-      <div class="wrap">
-        <div class="memberRow">
-          <div class="memberCol">
-            <div class="memberContent">
-              <img class="mb-5" src="images/sister-1.jpg" alt="">
-              <h3 class="font-medium text-xl mb-4"><span class="text-primary">麻兒 </span>(大姐)</h3>
-              <p>大姐麻兒沉默寡言，平時都在店內角落努力地縫製衣服，若是每天都與她對話的話，會漸漸地敞開心房，最後甚至會送你布料呢!</p>
-            </div>
-          </div>
-          <div class="memberCol">
-            <div class="memberContent">
-              <img class="mb-5" src="images/sister-2.jpg" alt="">
-              <h3 class="font-medium text-xl mb-4"><span class="text-primary">綿兒 </span>(二姐)</h3>
-              <p>二姐綿兒立志成為一名時尚設計師，偶爾會在服務處外面看到綿兒出現，只要與她對話就能開啟任務，測試自己對於衣服的搭配。</p>
-            </div>
-          </div>
-          <div class="memberCol">
-            <div class="memberContent">
-              <img class="mb-5" src="images/sister-3.jpg" alt="">
-              <h3 class="font-medium text-xl mb-4"><span class="text-primary">娟兒</span>(妹妹)</h3>
-              <p>妹妹娟兒每天都活力十足地招待客人，跟姐姐麻兒形成強烈的對比，不管你衣服搭配的多奇怪，她都會說真適合你...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footerMain py-8">
-      <div class="wrap">
-        <div class="footerNav">
-          <img class="footImg md:mb-4" src="images/able-sisters-2.png" alt="">
-          <ul class="footList">
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="product.html">手工服飾</a></li>
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="about.html">關於我們</a></li>
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="cartStep1.html">購物車</a></li>
-            <li class="footItem"><a class="footLink" href="login.html">登入後台</a></li>
+  <body>
+    <header class="header">
+      <div class="headerMain md:pr-4">
+        <a class="logo bg-primary" href="index.html"
+          ><img src="images/able-sisters.png" alt=""
+        /></a>
+        <div class="headerNav">
+          <ul>
+            <li>
+              <a class="headerLink" href="product.html">
+                <div class="headerIcon">
+                  <img src="images/icon-dress.svg" alt="" />
+                </div>
+                <span>手工服飾</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="about.html">
+                <div class="headerIcon">
+                  <img src="images/icon-star.svg" alt="" />
+                </div>
+                <span>關於我們</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="cartStep1.html">
+                <div class="headerIcon">
+                  <img src="images/icon-cart.svg" alt="" />
+                  <span class="headerQuantity bg-danger">1</span>
+                </div>
+                <span>購物車</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="login.html">
+                <div class="headerIcon">
+                  <img src="images/icon-admin.svg" alt="" />
+                </div>
+                <span>登入後台</span>
+              </a>
+            </li>
           </ul>
         </div>
+        <div class="headerBurger">
+          <span class="bg-primary"></span>
+          <span class="bg-primary"></span>
+        </div>
       </div>
-    </div>
-    <div class="footerCopyRight py-8">
-      <div class="wrap">
-        <p>網站所有內容、圖片僅為練習使用，無任何商業用途。</p>
+    </header>
+
+    <main class="main pt-20 md:pt-15">
+      <div class="loading">
+        <img src="images/island.svg" alt="" />
       </div>
-    </div>
-  </footer>
+      <div class="store">
+        <img src="images/about-banner.jpg" alt="" />
+        <div class="storeMain">
+          <div class="wrap">
+            <div class="storeMember">
+              <img src="images/member-2.png" alt="" />
+              <img src="images/member-1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="wrap-tiny">
+          <div>
+            <h2
+              class="title font-medium text-3xl mb-8 lg:text-2xl lg:mb-5 md:text-xl"
+            >
+              哈囉! 我們是 <span class="text-primary">Able Sisters</span>
+            </h2>
+          </div>
+          <p class="aboutContent">
+            刺蝟姐妹的裁縫店名叫「Able
+            Sisters」，一開始是位在初代動物之森中的村子
+            裡，由刺蝟三姐妹的大姐麻兒與小妹絹兒負責營運，販售服裝以及設計圖樣。起初
+            這間裁縫店是她們的父母開的，一家五口原本過著快樂的生活。但是一次意外讓她
+            們的父母過世了，因此年紀最長的麻兒只好扛起照顧妹妹們的責任，繼續維持著裁
+            縫店的生計。
+            <br />
+            <br />
+            而二姐綿兒卻在父母過世後決定獨立，想要成為一個時尚設計師，在與麻兒爭吵之
+            後離開了家，小妹絹兒則因為年紀太小了，幾乎不記得發生了什麼事情。因此裁縫
+            店便由麻兒與絹兒繼承，在動物之森系列中每一作都固定登場，而外觀也都是一致
+            的獨棟紅屋與綠色屋頂，只有在 3DS
+            版《走出戶外動物之森》中，裁縫店的二樓 是美髮店。在 Switch
+            版動物森友會中，一開始是絹兒受到豆貍與粒貍的邀請來
+            島上擺攤，擺攤幾次過後就也來到島上開店了。
+          </p>
+        </div>
+      </div>
+      <div class="member">
+        <div class="wrap">
+          <div class="memberRow">
+            <div class="memberCol">
+              <div class="memberContent">
+                <img class="mb-5" src="images/sister-1.jpg" alt="" />
+                <h3 class="font-medium text-xl mb-4">
+                  <span class="text-primary">麻兒 </span>(大姐)
+                </h3>
+                <p>
+                  大姐麻兒沉默寡言，平時都在店內角落努力地縫製衣服，若是每天都與她對話的話，會漸漸地敞開心房，最後甚至會送你布料呢!
+                </p>
+              </div>
+            </div>
+            <div class="memberCol">
+              <div class="memberContent">
+                <img class="mb-5" src="images/sister-2.jpg" alt="" />
+                <h3 class="font-medium text-xl mb-4">
+                  <span class="text-primary">綿兒 </span>(二姐)
+                </h3>
+                <p>
+                  二姐綿兒立志成為一名時尚設計師，偶爾會在服務處外面看到綿兒出現，只要與她對話就能開啟任務，測試自己對於衣服的搭配。
+                </p>
+              </div>
+            </div>
+            <div class="memberCol">
+              <div class="memberContent">
+                <img class="mb-5" src="images/sister-3.jpg" alt="" />
+                <h3 class="font-medium text-xl mb-4">
+                  <span class="text-primary">娟兒</span>(妹妹)
+                </h3>
+                <p>
+                  妹妹娟兒每天都活力十足地招待客人，跟姐姐麻兒形成強烈的對比，不管你衣服搭配的多奇怪，她都會說真適合你...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/all.js"></script>
-</body>
+    <footer>
+      <div class="footerMain py-8">
+        <div class="wrap">
+          <div class="footerNav">
+            <img
+              class="footImg md:mb-4"
+              src="images/able-sisters-2.png"
+              alt=""
+            />
+            <ul class="footList">
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="product.html">手工服飾</a>
+              </li>
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="about.html">關於我們</a>
+              </li>
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="cartStep1.html">購物車</a>
+              </li>
+              <li class="footItem">
+                <a class="footLink" href="login.html">登入後台</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footerCopyRight py-8">
+        <div class="wrap">
+          <p>網站所有內容、圖片僅為練習使用，無任何商業用途。</p>
+        </div>
+      </div>
+    </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
+  </body>
 </html>

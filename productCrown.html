@@ -1,129 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>able-sisters</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>able-sisters</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!--swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/all.min.css" />
+  </head>
 
-  <!--swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="dist/css/all.min.css">
-
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="headerMain md:pr-4">
-      <a class="logo bg-primary" href="index.html"><img src="images/able-sisters.png" alt=""></a>
-      <div class="headerNav">
-        <ul>
-          <li>
-            <a class="headerLink" href="product.html">
-              <div class="headerIcon">
-                <img src="images/icon-dress.svg" alt="">
-              </div>
-              <span>手工服飾</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="about.html">
-              <div class="headerIcon">
-                <img src="images/icon-star.svg" alt="">
-              </div>
-              <span>關於我們</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="cartStep1.html">
-              <div class="headerIcon">
-                <img src="images/icon-cart.svg" alt="">
-                <span class="headerQuantity bg-danger">1</span>
-              </div>
-              <span>購物車</span>
-            </a>
-          </li>
-          <li>
-            <a class="headerLink" href="login.html">
-              <div class="headerIcon">
-                <img src="images/icon-admin.svg" alt="">
-              </div>
-              <span>登入後台</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="headerBurger">
-        <span class="bg-primary"></span>
-        <span class="bg-primary"></span>
-      </div>
-    </div>
-  </header>
-
-  <main class="main pt-20 md:pt-15">
-    <div class="loading">
-      <img src="images/island.svg" alt="">
-    </div>
-    <div class="productDetail">
-      <div class="productDetailMain">
-        <div class="productDetailPhoto">
-          <img
-            src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FUcI5FvVAjiSldifbsBAYwfzshE4PFlB1MV1N7MylcVDFoCiMzmFah1p8kT4dR1llL3aqHMlxiGO8X2M6iUVLOS1F97o6DpXoJYWbaFELnCSxOSPo9XXRUnrvXBr0IAt.png"
-            alt="">
+  <body>
+    <header class="header">
+      <div class="headerMain md:pr-4">
+        <a class="logo bg-primary" href="index.html"
+          ><img src="images/able-sisters.png" alt=""
+        /></a>
+        <div class="headerNav">
+          <ul>
+            <li>
+              <a class="headerLink" href="product.html">
+                <div class="headerIcon">
+                  <img src="images/icon-dress.svg" alt="" />
+                </div>
+                <span>手工服飾</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="about.html">
+                <div class="headerIcon">
+                  <img src="images/icon-star.svg" alt="" />
+                </div>
+                <span>關於我們</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="cartStep1.html">
+                <div class="headerIcon">
+                  <img src="images/icon-cart.svg" alt="" />
+                  <span class="headerQuantity bg-danger">1</span>
+                </div>
+                <span>購物車</span>
+              </a>
+            </li>
+            <li>
+              <a class="headerLink" href="login.html">
+                <div class="headerIcon">
+                  <img src="images/icon-admin.svg" alt="" />
+                </div>
+                <span>登入後台</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="productDetailContent">
-          <div class="productDetailInner">
-            <h2 class="text-sm text-danger mb-2">帽子</h2>
-            <h1 class="mb-4">王冠</h1>
-            <p class="mb-5">欲戴王冠，必成其重</p>
-            <ul class="productDetailPrice">
-              <li class="mr-7">$1,200,000</li>
-              <li class="text-primary">優惠價
-                <span class="text-lg ml-1">$1,000,000</span>
-              </li>
-            </ul>
-            <div class="productDetailQuantity">
-              <span class="mr-5">數量</span>
-              <div class="productDetailAction">
-                <button class="productDetailBtn productDetailBtnMinus"></button>
-                <div class="productDetailInput">1</div>
-                <button class="productDetailBtn productDetailBtnPlus"></button>
+        <div class="headerBurger">
+          <span class="bg-primary"></span>
+          <span class="bg-primary"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main pt-20 md:pt-15">
+      <div class="loading">
+        <img src="images/island.svg" alt="" />
+      </div>
+      <div class="productDetail">
+        <div class="productDetailMain">
+          <div class="productDetailPhoto">
+            <img
+              src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FUcI5FvVAjiSldifbsBAYwfzshE4PFlB1MV1N7MylcVDFoCiMzmFah1p8kT4dR1llL3aqHMlxiGO8X2M6iUVLOS1F97o6DpXoJYWbaFELnCSxOSPo9XXRUnrvXBr0IAt.png"
+              alt=""
+            />
+          </div>
+          <div class="productDetailContent">
+            <div class="productDetailInner">
+              <h2 class="text-sm text-danger mb-2">帽子</h2>
+              <h1 class="mb-4">王冠</h1>
+              <p class="mb-5">欲戴王冠，必成其重</p>
+              <ul class="productDetailPrice">
+                <li class="mr-7">$1,200,000</li>
+                <li class="text-primary">
+                  優惠價
+                  <span class="text-lg ml-1">$1,000,000</span>
+                </li>
+              </ul>
+              <div class="productDetailQuantity">
+                <span class="mr-5">數量</span>
+                <div class="productDetailAction">
+                  <button
+                    class="productDetailBtn productDetailBtnMinus"
+                  ></button>
+                  <div class="productDetailInput">1</div>
+                  <button
+                    class="productDetailBtn productDetailBtnPlus"
+                  ></button>
+                </div>
               </div>
+              <a class="addCart bg-primary" href="cartStep1.html">加入購物車</a>
             </div>
-            <a class="addCart bg-primary" href="cartStep1.html">加入購物車</a>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="footerMain py-8">
-      <div class="wrap">
-        <div class="footerNav">
-          <img class="footImg md:mb-4" src="images/able-sisters-2.png" alt="">
-          <ul class="footList">
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="product.html">手工服飾</a></li>
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="about.html">關於我們</a></li>
-            <li class="footItem mr-7 sm:mr-0 sm:mb-4"><a class="footLink" href="cartStep1.html">購物車</a></li>
-            <li class="footItem"><a class="footLink" href="login.html">登入後台</a></li>
-          </ul>
+    <footer>
+      <div class="footerMain py-8">
+        <div class="wrap">
+          <div class="footerNav">
+            <img
+              class="footImg md:mb-4"
+              src="images/able-sisters-2.png"
+              alt=""
+            />
+            <ul class="footList">
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="product.html">手工服飾</a>
+              </li>
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="about.html">關於我們</a>
+              </li>
+              <li class="footItem mr-7 sm:mr-0 sm:mb-4">
+                <a class="footLink" href="cartStep1.html">購物車</a>
+              </li>
+              <li class="footItem">
+                <a class="footLink" href="login.html">登入後台</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footerCopyRight py-8">
-      <div class="wrap">
-        <p>網站所有內容、圖片僅為練習使用，無任何商業用途。</p>
+      <div class="footerCopyRight py-8">
+        <div class="wrap">
+          <p>網站所有內容、圖片僅為練習使用，無任何商業用途。</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/all.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
+  </body>
 </html>
